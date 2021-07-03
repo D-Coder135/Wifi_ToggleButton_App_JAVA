@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
                 if (isChecked) {
                     wifiManager.setWifiEnabled(true);
                 } else {
-
+                    wifiManager.setWifiEnabled(false);
                 }
             }
         });
