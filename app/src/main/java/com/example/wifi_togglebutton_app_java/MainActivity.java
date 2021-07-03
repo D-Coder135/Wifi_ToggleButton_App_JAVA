@@ -20,11 +20,7 @@ public class MainActivity extends AppCompatActivity {
         toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    wifiManager.setWifiEnabled(true);
-                } else {
-                    wifiManager.setWifiEnabled(false);
-                }
+                wifiManager.setWifiEnabled(isChecked);
             }
         });
     }
