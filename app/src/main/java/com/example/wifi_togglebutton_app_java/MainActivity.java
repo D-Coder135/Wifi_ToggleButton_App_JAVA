@@ -1,12 +1,10 @@
 package com.example.wifi_togglebutton_app_java;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Context;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
-import android.widget.CompoundButton;
 import android.widget.ToggleButton;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     ToggleButton toggleButton;
