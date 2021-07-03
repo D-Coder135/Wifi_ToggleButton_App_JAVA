@@ -9,7 +9,6 @@ import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
     ToggleButton toggleButton;
-    Context context;
     WifiManager wifiManager = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
 
     @Override
