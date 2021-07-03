@@ -17,11 +17,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         toggleButton = findViewById(R.id.toggleButton);
-        toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                wifiManager.setWifiEnabled(isChecked);
-            }
-        });
+        toggleButton.setOnCheckedChangeListener((buttonView, isChecked) -> wifiManager.setWifiEnabled(isChecked));
     }
 }
